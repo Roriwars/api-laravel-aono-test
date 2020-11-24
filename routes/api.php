@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::apiResource('matchs', 'MatchController');
+
+Route::apiResource('equipes', 'EquipeController');
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });

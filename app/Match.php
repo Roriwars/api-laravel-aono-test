@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Match extends Model
 {
-    //
+    protected $fillable = [
+       'idEquipeLocale','idEquipeVisiteuse' 
+    ];
 }
